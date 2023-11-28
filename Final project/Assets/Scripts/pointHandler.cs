@@ -14,8 +14,8 @@ public class pointHandler : MonoBehaviour
     }
 
     void Update(){
-        if(pointsEarned >= 20){
-            SceneManager.LoadScene("Main Menu");
+        if(pointsEarned >= 5){
+            SceneManager.LoadScene("Stage 2");
         }
     }
 
