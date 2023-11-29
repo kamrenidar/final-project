@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuHandler : MonoBehaviour
 {
     public void playGame(){
-        SceneManager.LoadScene("Stage 1");
+        SceneManager.LoadScene("upgradeChoice");
     }
 
     public void quitGame(){

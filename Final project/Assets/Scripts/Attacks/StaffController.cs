@@ -20,7 +20,7 @@ public class StaffController : AttackController
         Vector3 direction = mousePos - spawnStaff.transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-        spawnStaff.GetComponent<Rigidbody2D>().velocity = direction.normalized * attackStats.Speed;
+        spawnStaff.GetComponent<Rigidbody2D>().velocity = new Vector2(direction.x, direction.y).normalized * attackStats.Speed;
 
         spawnStaff.transform.rotation = Quaternion.Euler(0f,0f,angle);
     }

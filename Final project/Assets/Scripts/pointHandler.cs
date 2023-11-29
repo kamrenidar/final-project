@@ -6,7 +6,13 @@ using UnityEngine.SceneManagement;
 public class pointHandler : MonoBehaviour
 {
 
+    PlayerChoiceHandler playerChoiceHandler;
+
     [SerializeField] public int pointsEarned = 0;
+
+    void Awake(){
+        playerChoiceHandler = PlayerChoiceHandler.singleton;
+    }
 
     public void addPoints(int pointsToAdd){
         pointsEarned += pointsToAdd;
@@ -14,8 +20,8 @@ public class pointHandler : MonoBehaviour
     }
 
     void Update(){
-        if(pointsEarned >= 5){
-            SceneManager.LoadScene("Stage 2");
+        if(pointsEarned >= 1){
+           SceneManager.LoadScene("upgradeChoice");
         }
     }
 
