@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class AttackController : MonoBehaviour
 {
+    PlayerChoiceHandler playerChoiceHandler;
     public AttackScriptableObject attackStats;
     public float currentCooldown;
 
     // Start is called before the first frame update
     protected virtual void Start()
     {
+        playerChoiceHandler = PlayerChoiceHandler.singleton;
         currentCooldown = attackStats.Cooldown;
     }
 
