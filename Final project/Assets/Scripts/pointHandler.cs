@@ -14,8 +14,8 @@ public class pointHandler : MonoBehaviour
     void Awake(){
         playerChoiceHandler = PlayerChoiceHandler.singleton;
 
-        if(playerChoiceHandler.choices[2] != 0) goal = 20;
-        else if(playerChoiceHandler.choices[1] != 0) goal = 20;
+        if(playerChoiceHandler.choices[2] != 0) goal = 100;
+        else if(playerChoiceHandler.choices[1] != 0) goal = 50;
         else goal = 20;
     }
 

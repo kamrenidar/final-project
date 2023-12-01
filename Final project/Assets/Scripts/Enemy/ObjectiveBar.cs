@@ -16,8 +16,8 @@ public class ObjectiveBar : MonoBehaviour
         
         playerChoiceHandler = PlayerChoiceHandler.singleton;
 
-        if(playerChoiceHandler.choices[2] != 0) goalString = "60";
-        else if(playerChoiceHandler.choices[1] != 0) goalString = "40";
+        if(playerChoiceHandler.choices[2] != 0) goalString = "100";
+        else if(playerChoiceHandler.choices[1] != 0) goalString = "50";
         else goalString = "20";
     }
 
