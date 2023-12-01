@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JinguController : AttackController
+public class RuyiController : AttackController
 {
     protected override void Start()
     {
         base.Start();
+
+        if(playerChoiceHandler.choices[0] != 1){
+            Destroy(gameObject);
+        }
     }
 
     protected override void activate()

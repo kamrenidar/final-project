@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BangController : AttackController
+public class JinguController : AttackController
 {
     protected override void Start()
     {
         base.Start();
+        if(playerChoiceHandler.choices[1] != 1 || playerChoiceHandler.choices[1] == 0){
+            Destroy(gameObject);
+        }
     }
 
     protected override void activate()
@@ -23,4 +26,3 @@ public class BangController : AttackController
         spawnStaff.transform.rotation = Quaternion.Euler(0f,0f,angle + 270f);
     }
 }
-

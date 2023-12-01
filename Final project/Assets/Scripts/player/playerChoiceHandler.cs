@@ -27,7 +27,7 @@ public class PlayerChoiceHandler : MonoBehaviour
         time -= Time.deltaTime;
         if(time <= 0f){
             Debug.Log("[0] = " + choices[0] + "[1] = " + choices[1] + "[2] = " + choices[2]);
-            time = 1;
+            time = 5;
         }
     }
 }

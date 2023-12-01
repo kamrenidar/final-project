@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f6309f953063d478729986f549b499, type: 3}
   m_Name: CloudsAttack
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
-  damage: 0
+  prefab: {fileID: 3552662968420599526, guid: 0fe2b77eec8067e4f9ace47101dd153a, type: 3}
+  damage: 4
   speed: 0
-  cooldown: 0
+  cooldown: 2.5
   pierce: 0
   size: 0

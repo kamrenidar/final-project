@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AttackController : MonoBehaviour
 {
-    PlayerChoiceHandler playerChoiceHandler;
+    public PlayerChoiceHandler playerChoiceHandler;
     public AttackScriptableObject attackStats;
     public float currentCooldown;
 

@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RuyiController : AttackController
+public class BangController : AttackController
 {
     protected override void Start()
     {
         base.Start();
+        if(playerChoiceHandler.choices[2] != 1 || playerChoiceHandler.choices[2] == 0){
+            Destroy(gameObject);
+        }
     }
 
     protected override void activate()
@@ -23,3 +26,4 @@ public class RuyiController : AttackController
         spawnStaff.transform.rotation = Quaternion.Euler(0f,0f,angle + 270f);
     }
 }
+

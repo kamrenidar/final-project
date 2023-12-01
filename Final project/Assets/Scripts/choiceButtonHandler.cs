@@ -17,9 +17,12 @@ public class choiceButtonHandler : MonoBehaviour
             playerChoiceHandler.choices[1] = 1;
             SceneManager.LoadScene("Stage 2");
         }
-        else{
+        else if(playerChoiceHandler.choices[2] == 0){
             playerChoiceHandler.choices[2] = 1;
             SceneManager.LoadScene("Stage 3");
+        }
+        else{
+            SceneManager.LoadScene("Main Menu");
         }
     }
 
@@ -35,9 +38,12 @@ public class choiceButtonHandler : MonoBehaviour
             playerChoiceHandler.choices[1] = 2;
             SceneManager.LoadScene("Stage 2");
         }
-        else{
+        else if(playerChoiceHandler.choices[2] == 0){
             playerChoiceHandler.choices[2] = 2;
             SceneManager.LoadScene("Stage 3");
+        }
+        else{
+            SceneManager.LoadScene("Main Menu");
         }
     }
 }
